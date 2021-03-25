@@ -1,5 +1,7 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Square from './Square';
 
 function App() {
   return (
@@ -22,4 +24,10 @@ function App() {
   );
 }
 
-export default App;
+class Board extends React.Component {
+  renderSquare(i) {
+    return <Square value = {i} />;
+  }
+}
+
+export default Board;
