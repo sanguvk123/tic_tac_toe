@@ -1,6 +1,5 @@
 body {
   font: 50px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
   align-items: center;
 }
 
@@ -12,10 +11,12 @@ ol, ul {
   clear: both;
   content: "";
   display: table;
+  align-items: center;
 }
 
 .status {
   margin-bottom: 10px;
+
 }
 
 .square {
@@ -25,12 +26,18 @@ ol, ul {
   font-size: 50px;
   font-weight: bold;
   line-height: 34px;
-  height: 100px;
+  height: 150px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 100px;
+  width: 150px;
+}
+
+.BoardDesign{
+  margin-left: 38%;
+  margin-top: 15%;
+  align-items: center;
 }
 
 .square:focus {

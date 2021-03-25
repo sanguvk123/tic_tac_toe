@@ -26,10 +26,10 @@ class Board extends React.Component {
 
   renderSquare(i) {
     return (
-      <Square
-        value = {this.state.squares[i]}
-        onClick = {() => this.handleClick(i)}
-      />
+        <Square
+          value = {this.state.squares[i]}
+          onClick = {() => this.handleClick(i)}
+        />
     );
   }
 
@@ -38,12 +38,14 @@ class Board extends React.Component {
     let status;
     if(winner) {
       status = 'Winner: ' + winner;
+
     }
     else {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
     return (
       <div>
+      <div className = "BoardDesign">
         <div className="status">{status}</div>
         <div className="board-row">
           {this.renderSquare(0)}
@@ -60,6 +62,7 @@ class Board extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
+      </div>
       </div>
     );
   }
